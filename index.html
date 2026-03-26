@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ninestars</title>
+</head>
+
+<body class="p-0 m-0">
+    <header id="header">
+        <nav id="nav" class="bg-white py-3 shadow-sm d-flex justify-content-around align-items-center fixed-top">
+            <span class="navbarBrand fs-4 text-secondary">Ninestars</span>
+            <ul class="navList d-flex list-unstyled gap-4 mb-0 align-items-center">
+                <li class="navItem"><a class="navLink active text-decoration-none" href="#header">Home</a></li>
+                <li class="navItem"><a class="navLink text-decoration-none" href="#about">About Us</a></li>
+                <li class="navItem"><a class="navLink text-decoration-none" href="#services">Services</a></li>
+                <li class="navItem"><a class="navLink text-decoration-none" href="#portfolio">Portfolio</a></li>
+                <li class="navItem"><a class="navLink text-decoration-none" href="#team">Team</a></li>
+
+                <!--Drop Down-->
+                <li class="navItem dropdown"><a class="navLink text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop Down <i class="fa-solid fa-angle-down"></i></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item navLink" href="#">Drop Down 1</a></li>
+
+                        <!--Deep Drop Down-->
+                        <li class="position-relative"><a class="dropdown-item navLink" href="#">Deep Drop Down <i class="fa-solid fa-angle-right"></i></a>
+
+                            <ul class="dropdown-menu navList">
+                                <li><a class="dropdown-item navLink" href="#">Deep Drop Down 1</a></li>
+                                <li><a class="dropdown-item navLink" href="#">Deep Drop Down 2</a></li>
+                                <li><a class="dropdown-item navLink" href="#">Deep Drop Down 3</a></li>
+                                <li><a class="dropdown-item navLink" href="#">Deep Drop Down 4</a></li>
+                                <li><a class="dropdown-item navLink" href="#">Deep Drop Down 5</a></li>
+                            </ul>
+                        </li><!--Deep Drop Down-->
+
+                        <li><a class="dropdown-item navLink" href="#">Drop Down 2</a></li>
+                        <li><a class="dropdown-item navLink" href="#">Drop Down 3</a></li>
+                        <li><a class="dropdown-item navLink" href="#">Drop Down 4</a></li>
+                    </ul>
+                </li><!--Drop Down-->
+
+                <li class="navItem"><a class="navLink text-decoration-none" href="#contact">Contact</a></li>
+
+                <li><button class="btn rounded-pill text-white px-4 py-2">Get Started</button></li>
+            </ul>
+        </nav><!--navbar-->
+
+        <section id="hero" class="d-flex align-items-center justify-content-center border-bottom border-warning-subtle">
+            <div>
+                <h1 class="title fw-bold">Better digital experience with Ninestars</h1>
+                <p class="para text-secondary fs-4 fw-light">We are a team of talented designers making websites with
+                    Bootstrap</p>
+                <button class="btn text-white rounded-0 px-4">Get Strarted</button>
+            </div>
+            <img class="img" src="images/hero-img.webp" alt="">
+        </section><!--hero-->
+    </header><!--nav & hero-->
+
+    <section id="about" class="d-flex align-items-center justify-content-center">
+        <img class="img" src="images/about-img.webp" alt="">
+        <div>
+            <h3 class="title fw-bold">Voluptatem dignissimos provident quasi</h3>
+            <p class="para text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+            <div class="cardContainer d-flex">
+                <div class="card border-0">
+                    <i class="fa-solid fa-file-invoice fs-3 text-primary pb-2"></i>
+                    <h6 class="card-title text-secondary fw-bold">Corporis voluptates sit</h6>
+                    <p class="para text-secondary">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                        nisi ut aliquip</p>
+                </div>
+                <div class="card border-0">
+                    <i class="fa-solid fa-cube fs-3 text-primary pb-2"></i>
+                    <h6 class="card-title text-secondary fw-bold">Ullamco laboris nisi</h6>
+                    <p class="para text-secondary">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt</p>
+                </div>
+            </div>
+        </div>
+    </section><!--about-->
+
+    <section id="services" class="d-flex flex-column align-items-center">
+        <h4 class="secId text-secondary fw-bold">Services</h4>
+        <h3 class="title fw-bold">Check out the great service we offer</h3>
+        <hr>
+        <div class="cardContainer d-flex gap-4">
+            <div class="card d-flex flex-column align-items-center rounded-3 shadow-lg py-3 px-4">
+                <i class="bi bi-dribbble fs-2 text-primary pb-2"></i>
+                <h6 class="card-title pb-2">Lorem Ipsum</h6>
+                <p class="para text-secondary text-center">Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi sint occaecati cupidatate</p>
+            </div>
+            <div class="card d-flex flex-column align-items-center rounded-3 shadow-lg py-3 px-4">
+                <i class="bi bi-file-earmark-text fs-2 text-primary pb-2"></i>
+                <h6 class="card-title pb-2">Sed ut perspiciatis</h6>
+                <p class="para text-secondary text-center">Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla</p>
+            </div>
+            <div class="card d-flex flex-column align-items-center rounded-3 shadow-lg py-3 px-4">
+                <i class="bi bi-speedometer2 fs-2 text-primary pb-2"></i>
+                <h6 class="card-title pb-2">Magni Dolores</h6>
+                <p class="para text-secondary text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim</p>
+            </div>
+            <div class="card d-flex flex-column align-items-center rounded-3 shadow-lg py-3 px-4">
+                <i class="bi bi-globe-asia-australia fs-2 text-primary pb-2"></i>
+                <h6 class="card-title pb-2">Nemo Enim</h6>
+                <p class="para text-secondary text-center">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium Voluptatum</p>
+            </div>
+        </div>
+    </section><!--services-->
+
+    <section id="portfolio" class="d-flex flex-column align-items-center">
+        <h4 class="secId text-secondary fw-bold">Portfolio</h4>
+        <h3 class="title fw-bold">Check out our beautiful portfolio</h3>
+        <hr>
+        <div class="tabsContainer mb-5">
+            <button data-tab="all" class="tab active border-0 bg-white">All</button>
+            <button data-tab="app" class="tab border-0 bg-white">App</button>
+            <button data-tab="card" class="tab border-0 bg-white">Card</button>
+            <button data-tab="web" class="tab border-0 bg-white">Web</button>
+        </div>
+        <div class="prodContainer container">
+            <div class="row row-cols-3 row-gap-4">
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all app img-fluid rounded-2" src="images/portfolio/portfolio-1.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">App 1</h5>
+                            <p class="paraLayer">App</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all web img-fluid rounded-2" src="images/portfolio/portfolio-2.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">Web 1</h5>
+                            <p class="paraLayer">Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all app img-fluid rounded-2" src="images/portfolio/portfolio-3.webp" alt="">
+                    <div
+                        class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">App 2</h5>
+                            <p class="paraLayer">App</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all card img-fluid rounded-2" src="images/portfolio/portfolio-4.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">Card 1</h5>
+                            <p class="paraLayer">Card</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all web img-fluid rounded-2" src="images/portfolio/portfolio-5.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">Web 2</h5>
+                            <p class="paraLayer">Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all app img-fluid rounded-2" src="images/portfolio/portfolio-6.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">App 3</h5>
+                            <p class="paraLayer">App</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all card img-fluid rounded-2" src="images/portfolio/portfolio-7.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">Card 2</h5>
+                            <p class="paraLayer">Card</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all card img-fluid rounded-2" src="images/portfolio/portfolio-8.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">Card 3</h5>
+                            <p class="paraLayer">Card</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative overflow-hidden">
+                    <img class="img all web img-fluid rounded-2" src="images/portfolio/portfolio-9.webp" alt="">
+                    <div class="layer position-absolute top-0 start-0 rounded-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="iconLayer d-flex gap-2 text-primary">
+                            <i class="bi bi-plus d-flex rounded-circle fs-5 p-1"></i>
+                            <i class="bi bi-link d-flex rounded-circle fs-5 p-1"></i>
+                        </div>
+                        <div class="divLayer text-white position-absolute top-100 start-50 translate-middle d-flex flex-column align-items-center pb-5">
+                            <h5 class="titleLayer">Web 3</h5>
+                            <p class="paraLayer">Web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--portfolio-->
+
+    <section id="faq">
+        <div class="d-flex flex-column align-items-center">
+            <h4 class="secId text-secondary fw-bold">F.A.Q</h4>
+            <h3 class="title fw-bold">Frequently Asked Questions</h3>
+            <hr>
+        </div>
+        <div class="qIconContainer d-flex gap-2">
+            <i class="bi bi-chevron-down"></i>
+            <h6>Non consectetur a erat nam at lectus urns duis?</h6>
+        </div>
+        <p class="qDropdown mx-4 hide">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+            laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+        <hr class="border border-1 w-100 mb-3">
+
+        <div class="qIconContainer d-flex gap-2">
+            <i class="bi bi-chevron-down"></i>
+            <h6>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h6>
+        </div>
+        <p class="qDropdown mx-4 hide">Dolor sit amet consectetur adipisicing elit pellentesque habitant morbi. Id
+            interdum velit laoreet id donec ultrices. fringilla phasellus faucibus scelerisque eleifend donec pretium.
+            Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+        <hr class="border border-1 w-100 mb-3">
+
+        <div class="qIconContainer d-flex gap-2">
+            <i class="bi bi-chevron-down"></i>
+            <h6>Dolor sit amet consectetur adipisicing elit pellentesque habitant morbi?</h6>
+        </div>
+        <p class="qDropdown mx-4 hide">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+            Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisi suscipit. Rutrum tellus
+            pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu
+            facilisis sed odio morbi quis</p>
+        <hr class="border border-1 w-100 mb-3">
+
+        <div class="qIconContainer d-flex gap-2">
+            <i class="bi bi-chevron-down"></i>
+            <h6>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h6>
+        </div>
+        <p class="qDropdown mx-4 hide">Dolor sit amet consectetur adipisicing elit pellentesque habitant morbi. Id
+            interdum velit laoreet id donec ultrices. fringilla phasellus faucibus scelerisque eleifend donec pretium.
+            Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+        <hr class="border border-1 w-100 mb-3">
+
+        <div class="qIconContainer d-flex gap-2">
+            <i class="bi bi-chevron-down"></i>
+            <h6>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h6>
+        </div>
+        <p class="qDropdown mx-4 hide">Molesite a iaculis at erat pellentesque adipisicing commodo. Dignissim
+            suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
+            adipisicing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+        <hr class="border border-1 w-100 mb-3">
+
+        <div class="qIconContainer d-flex gap-2">
+            <i class="bi bi-chevron-down"></i>
+            <h6>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h6>
+        </div>
+        <p class="qDropdown mx-4 hide">Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultrices leo
+            integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed.
+            Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas
+            egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.</p>
+        <hr class="border border-1 w-100 mb-3">
+
+
+
+    </section><!--faq-->
+
+    <section id="team" class="d-flex flex-column align-items-center">
+        <h4 class="secId text-secondary fw-bold">Team</h4>
+        <h3 class="title fw-bold">Our team is always here to help</h3>
+        <hr>
+        <div class="teamImgs d-flex gap-4">
+            <div class="teamCard position-relative overflow-hidden">
+                <img class="img img-fluid d-block width-100" src="images/team/team-1.webp" alt="">
+                <div class="teamOverlay position-absolute top-0 start-0 w-100">
+                    <div class="iconsTeam position-absolute top-0 d-flex flex-column gap-2 text-white">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h5 class="teamName text-white text-center position-absolute">Walter White</h5>
+                    <p class="teamOccup text-white text-center position-absolute">Chief Executive Officer</p>
+                </div>
+            </div>
+
+            <div class="teamCard position-relative overflow-hidden">
+                <img class="img img-fluid d-block width-100" src="images/team/team-2.webp" alt="">
+                <div class="teamOverlay position-absolute top-0 start-0 w-100">
+                    <div class="iconsTeam position-absolute top-0 d-flex flex-column gap-2 text-white">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h5 class="teamName text-white text-center position-absolute">Sarah Jhonson</h5>
+                    <p class="teamOccup text-white text-center position-absolute">Product Manager</p>
+                </div>
+            </div>
+
+            <div class="teamCard position-relative overflow-hidden">
+                <img class="img img-fluid d-block width-100" src="images/team/team-3.webp" alt="">
+                <div class="teamOverlay position-absolute top-0 start-0 w-100">
+                    <div class="iconsTeam position-absolute top-0 d-flex flex-column gap-2 text-white">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h5 class="teamName text-white text-center position-absolute">William Anderson</h5>
+                    <p class="teamOccup text-white text-center position-absolute">CTO</p>
+                </div>
+            </div>
+
+            <div class="teamCard position-relative overflow-hidden">
+                <img class="img img-fluid d-block width-100" src="images/team/team-4.webp" alt="">
+                <div class="teamOverlay position-absolute top-0 start-0 w-100">
+                    <div class="iconsTeam position-absolute top-0 d-flex flex-column gap-2 text-white">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h5 class="teamName text-white text-center position-absolute">Amanda Jepson</h5>
+                    <p class="teamOccup text-white text-center position-absolute">Accountant</p>
+                </div>
+            </div>
+        </div>
+    </section><!--team-->
+
+    <section id="clients" class="d-flex flex-column align-items-center">
+        <h4 class="secId text-secondary fw-bold">Clients</h4>
+        <h3 class="title fw-bold">They trusted us</h3>
+        <hr>
+
+        <div class="clientsContainer d-flex flex-column align-items-center container overflow-hidden">
+
+            <div class="logoTrack d-flex align-items-center">
+                <div class="logoItem"><img src="images/clients/client-1.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-2.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-3.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-4.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-5.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-6.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-7.webp" class="img-fluid"></div>
+                <div class="logoItem"><img src="images/clients/client-8.webp" class="img-fluid"></div>
+            </div>
+
+            <div class="dots">
+                <button class="dotBtn border-primary rounded-circle p-1 active"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+                <button class="dotBtn border-primary rounded-circle p-1"></button>
+            </div>
+        </div>
+    </section><!--clients-->
+
+    <section id="contact" class="d-flex flex-column align-items-center">
+        <h4 class="secId text-secondary fw-bold">Clontact Us</h4>
+        <h3 class="title fw-bold">Contact us and get started</h3>
+        <hr>
+        <!--location-->
+        <div class="contactContainer d-flex gap-4">
+            <div class="locationContainer shadow-lg border border-3 border-primary border-start-0 border-end-0 p-4 d-flex flex-column gap-2">
+                <div class="loRow d-flex gap-4">
+                    <i class="bi bi-geo-alt rowIcon text-primary rounded-circle text-center align-content-center"></i>
+                    <div class="infoContainer">
+                        <h4 class="infoTitle fs-5 text-secondary mb-1">Location:</h4>
+                        <p class="info text-secondary">A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+
+                <div class="loRow d-flex gap-4">
+                    <i class="bi bi-envelope rowIcon text-primary rounded-circle text-center align-content-center"></i>
+                    <div class="infoContainer">
+                        <h4 class="infoTitle fs-5 text-secondary mb-1">Email:</h4>
+                        <p class="info text-secondary">info@example.com</p>
+                    </div>
+                </div>
+
+                <div class="loRow d-flex gap-4">
+                    <i class="bi bi-phone rowIcon text-primary rounded-circle text-center align-content-center"></i>
+                    <div class="infoContainer">
+                        <h4 class="infoTitle fs-5 text-secondary mb-1">Call:</h4>
+                        <p class="info text-secondary">+1 5589 55488 55s</p>
+                    </div>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9366.038042024207!2d-74.00872113928254!3d40.708784954452895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown.%20Conference%20Center!5e0!3m2!1sen!2seg!4v1774315203519!5m2!1sen!2seg"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!--form-->
+            <div class="startFormCont shadow-lg border border-3 border-primary border-start-0 border-end-0 p-4">
+                <form class="form d-flex flex-column gap-4" action="" method="post">
+                    <div class="nameEmailCon d-flex gap-4">
+                        <div class="nameCon d-flex flex-column">
+                            <label for="name" class="name">Your Name</label>
+                            <input type="text" id="name" name="userName" placeholder="Your Name"
+                                class="p-2 ps-3 border border-secondery">
+                        </div>
+                        <div class="emialCon d-flex flex-column">
+                            <label for="email" class="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email"
+                                class="p-2 ps-3 border border-secondery">
+                        </div>
+                    </div>
+
+                    <div class="subjectCon d-flex flex-column">
+                        <label for="subject" class="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject"
+                            class="p-2 ps-3 border border-secondery">
+                    </div>
+
+                    <div class="messageCon d-flex flex-column">
+                        <label for="message" class="message">Message</label>
+                        <textarea name="message" id="message" class="border border-secondery p-2"></textarea>
+                    </div>
+
+                    <input type="submit" value="Send Message" class="btn text-white w-25 align-self-center">
+                </form>
+            </div>
+
+        </div>
+    </section><!--contact-->
+
+    <section id="newsletter" class="d-flex flex-column align-items-center gap-2">
+        <h3 class="title fs-4">Join Our Newsletter</h3>
+        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+        <div class="d-flex pt-2">
+            <input type="text" id="subscribe" name="subscribe" class="border-0 shadow-sm p-2">
+            <input type="submit" value="subscribe" class="btn text-white px-3 align-self-center">
+        </div>
+    </section><!--newsletter-->
+
+    <footer id="footer" class="container">
+            <div class="row text-muted">
+                <div class="col-3 pe-5 lh-base">
+                    <span class="title fs-4">Ninestars</span>
+                    <p class="pe-5">A108 Adam Street New York, NY 535022 United States</p>
+                    <p class="mb-0"><span class="fw-bold">Phone:</span> +1 5589 55488 55</p>
+                    <p><span class="fw-bold">Email:</span> info@example.com</p>
+                </div>
+
+                <div class="col-3">
+                    <h6 class="title fw-bold mb-3">Useful Links</h6>
+                    <p><a href="#header" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Home</a></p>
+                    <p><a href="#about" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> About Us</a></p>
+                    <p><a href="#services" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Services</a></p>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Terms of service</a></p>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Privacy policy</a></p>
+                </div>
+
+                <div class="col-3">
+                    <h6 class="title fw-bold mb-3">Our Services</h6>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Web Design</a></p>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Web Development</a></p>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Product Management</a></p>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Marketing</a></p>
+                    <p><a href="#!" class="text-reset text-decoration-none"><i class="bi bi-chevron-right text-primary"></i> Graphic Design</a></p>
+                </div>
+
+                <div class="col-3">
+                    <h6 class="title fw-bold mb-3">Our Social Networks</h6>
+                    <p class="lh-base mb-4">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <a href="#https://twitter.com/" class="link text-white bg-primary p-2 rounded-circle"><i class="fab fa-twitter"></i></a>
+                    <a href="#https://www.facebook.com/" class="link text-white bg-primary p-2 rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#https://www.instagram.com/" class="link text-white bg-primary p-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="#https://www.skype.com/" class="link text-white bg-primary p-2 rounded-circle"><i class="fab fa-skype"></i></a>
+                    <a href="#https://www.linkedin.com/" class="link text-white bg-primary p-2 rounded-circle"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    </footer><!--footer-->
+
+    <section class="copyright d-flex justify-content-between">
+        <p><i class="bi bi-c-circle"></i> Copyright <span class="fw-bold">Ninestars</span>. All Rights Reserved</p>
+        <p>Designed by <span class="text-primary">BootstrapMade</span></p>
+    </section><!--Copyright-->
+
+    <button class="toTopBtn btn fixed-bottom p-1 m-2 text-white fs-5"><i class="bi bi-arrow-up-short"></i></button><!--Go To Top Btn-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
